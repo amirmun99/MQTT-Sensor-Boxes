@@ -1,0 +1,10 @@
+mqtt:
+  sensor:
+    - name: "Bedroom Temperature"
+      state_topic: "home/bedroom_sensor"
+      value_template: "{{ value_json.temperature }}"
+      unit_of_measurement: "°C"
+    - name: "Bedroom Humidity"
+      state_topic: "home/bedroom_sensor"
+      value_template: "{{ value_json.humidity }}"
+      unit_of_measurement: "%"
